@@ -10,6 +10,8 @@ export default defineConfig({
       '@openpanel/react-native': stub('openpanel'),
       '@react-native-async-storage/async-storage': stub('storage'),
       react: stub('react'),
+      'react-native': stub('react-native'),
+      'firebase/firestore': stub('firestore'),
     },
   },
   test: { include: ['tests/**/*.test.ts'] },
