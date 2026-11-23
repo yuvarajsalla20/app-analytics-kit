@@ -5,5 +5,5 @@ import type { Analytics, AnalyticsKeys } from './types';
  * passes null for the keys on the website (see the README), so the website bundle does not contain them either.
  */
 export function createAnalytics(_keys: AnalyticsKeys | null | undefined): Analytics {
-  return { on: false, useScreenView() {} };
+  return { on: false, setSwitch() {}, useScreenView() {} };
 }
