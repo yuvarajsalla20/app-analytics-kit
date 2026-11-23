@@ -1,0 +1,50 @@
+{
+  "name": "app-analytics-kit",
+  "version": "1.0.0",
+  "description": "Privacy-first screen views for every app on the kits, sent to OpenPanel from iPhone and Android only. The website never carries the keys.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "author": "Yuvaraj Salla",
+  "dependencies": {
+    "@openpanel/react-native": "1.4.4"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": ">=1.21",
+    "expo-application": ">=5",
+    "expo-constants": ">=14",
+    "react": ">=18",
+    "react-native": ">=0.74"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3",
+    "vitest": "^2.1.9",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo-application": "~58.1.2",
+    "expo-constants": "~58.0.15",
+    "react": "19.3.0",
+    "react-native": "0.88.1"
+  },
+  "overrides": {
+    "@openpanel/react-native": {
+      "expo-application": "~58.1.2",
+      "expo-constants": "~58.0.15"
+    }
+  }
+}
